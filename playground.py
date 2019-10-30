@@ -135,7 +135,21 @@ print(p1.age)
 
 p1.my_function
 
+print("--------------------")
+
 # Can delete any object using del
 # Example del p1.age
 # Classes cannot usually be empty but can use the pass statement so it's technically not empty but it is.
 
+class Car:
+  def __init__(self, company_name, model_name):
+    self.company_name = company_name
+    self.model_name = model_name
+
+  def print_name(self):
+    print(self.company_name, self.model_name)
+
+x = Car("Toyota", "Camry")
+x.print_name()
+
+print("--------------------")
