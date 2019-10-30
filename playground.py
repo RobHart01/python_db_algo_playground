@@ -101,4 +101,22 @@ for a in range(5, 20, 5):
 
 print("--------------------")
 
+# 6.5 Using else
+for b in range(5):
+  print(b)
+else:
+  print("Finally done counting! Whew")
+
+print("--------------------")
+
+# 6.6 Using nested loops
+japanese_cars = ["Toyota", "Honda", "Nissan"]
+toyoto_car_models = ["Camry", "Corolla", "Highlander"]
+
+for c in japanese_cars:
+  for d in toyoto_car_models:
+    print(c,d)
+
+
+
 
