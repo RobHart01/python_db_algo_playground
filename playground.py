@@ -49,7 +49,7 @@ hobbies.remove("Dancing")
 
 print("--------------------")
 
-# 6. For loops
+# 6 For loops
 print("Here are my hobbies:")
 for one_hobby in hobbies:
   print(one_hobby)
@@ -60,5 +60,45 @@ for one_hobby in hobbies:
   print(x, one_hobby)
 print("--------------------")
 
+# 6.1 For loops through strings
+random_word = "Robert"
+for x in random_word:
+  print(x)
+
+print("--------------------")
+
+# 6.2 Using Break
+random_word = "Robert"
+for x in random_word:
+  print(x)
+  if x == "b":
+    break
+print("--------------------")
+
+# 6.3 Using Continue
+moving = ["Crawling", "Walking", "Running", "Sprinting"]
+for type_of_movement in moving:
+  print(type_of_movement)
+  if type_of_movement == "Running":
+    continue
+print("--------------------")
+
+# 6.4 Using range()
+for z in range(7):
+  print(z)
+
+print("--------------------")
+
+# 6.4.1 Using starting parameter
+for v in range(3,7):
+  print(v)
+
+print("--------------------")
+
+# 6.4.2 Using incrementing value
+for a in range(5, 20, 5):
+    print(a)
+
+print("--------------------")
 
 
