@@ -117,6 +117,25 @@ for c in japanese_cars:
   for d in toyoto_car_models:
     print(c,d)
 
+print("--------------------")
 
+# 7 Using Objects
 
+class Person:
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age
+  def my_function(self):
+    print("Hello my name is " + self.name)
+
+p1 = Person("Robert", 22)
+print(p1)
+print(p1.name)
+print(p1.age)
+
+p1.my_function
+
+# Can delete any object using del
+# Example del p1.age
+# Classes cannot usually be empty but can use the pass statement so it's technically not empty but it is.
 
