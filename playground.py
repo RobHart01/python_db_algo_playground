@@ -153,3 +153,15 @@ x = Car("Toyota", "Camry")
 x.print_name()
 
 print("--------------------")
+
+# 7.1 Create a Child Class
+class Tesla(Car):
+  def __init__(self, company_name, model_name):
+    #self.model_name = model_name
+    #self.model_year = model_year
+    Car.__init__(self, company_name, model_name)
+
+s = Tesla("Telsa", "Model Y")
+s.print_name()
+
+print("--------------------")
