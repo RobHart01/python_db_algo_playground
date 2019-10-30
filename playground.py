@@ -155,13 +155,33 @@ x.print_name()
 print("--------------------")
 
 # 7.1 Create a Child Class
-class Tesla(Car):
+class Another_Car(Car):
   def __init__(self, company_name, model_name):
     #self.model_name = model_name
     #self.model_year = model_year
     Car.__init__(self, company_name, model_name)
 
-s = Tesla("Telsa", "Model Y")
+s = Another_Car("Telsa", "Model Y")
 s.print_name()
 
 print("--------------------")
+
+    # 7.2 Can use super() Function that will automatically inherit all the methods & properties from it's parent:
+    # class Another_Car(Car):
+    #   def __init__(self, company_name, model_name):
+    #     super().__init__)(company_name, model_name)
+class Person:
+  def __init__(self, fname, lname):
+    self.firstname = fname
+    self.lastname = lname
+  def printname(self):
+    print(self.firstname, self.lastname)
+
+class Student(Person):
+    def __init__(self, fname, lname, year):
+      super().__init__(fname, lname)
+      self.graduationyear = year
+    def welcome(self):
+      print("Welcome", self.firstname, self.lastname, "to the class of", self.graduationyear)
+v = Student("Robin", "Hartley", 2015)
+v.welcome()
