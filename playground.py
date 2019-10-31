@@ -185,3 +185,38 @@ class Student(Person):
       print("Welcome", self.firstname, self.lastname, "to the class of", self.graduationyear)
 v = Student("Robin", "Hartley", 2015)
 v.welcome()
+
+print("--------------------")
+
+# 8.0 Iterator vs Iterable
+mytuple = ("apple", "banana", "strawberry")
+myit = iter(mytuple)
+
+print(next(myit))
+print(next(myit))
+print(next(myit))
+
+print("--------------------")
+
+# 8.1 Iterating Strings
+mystr = "banana"
+myit = iter(mystr)
+
+print(next(myit))
+print(next(myit))
+print(next(myit))
+print(next(myit))
+print(next(myit))
+print(next(myit))
+
+print("--------------------")
+
+# 8.2 Looping Through an Iterator
+for x in mytuple:
+    print(x)
+
+print("--------------------")
+
+# 8.3 Iterate the characters of a string
+for x in mystr:
+    print(x)
