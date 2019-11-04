@@ -8,7 +8,7 @@ print("After Swapping: x =", x, " y =", y)
 
 print("----------")
 
-#2 Check if array/list is palindrome
+#2 Check if array/list is Palindrome
 # Create a function
 def isPalindrome(arr):
   # Create for loop with range() starting from 0, iterating through the length of array, then divide it by two.
@@ -26,7 +26,7 @@ print(isPalindrome(testarray))
 
 print("----------")
 
-#2.1 Another way of solving a Palendrome
+#2.1 Another way of solving a Palindrome
 # function which return reverse of a string 
 def reverse(s): 
   return s[::-1] 
@@ -38,8 +38,30 @@ def isPalindromeTwo(s):
     return True
   return False
 s = "kayak"
-ans = isPalindrome(s) 
+ans = isPalindromeTwo(s) 
 if ans == 1: 
   print("Yes") 
 else: 
   print("No")
+
+print("----------")
+
+#2.2 Third way of solving Palindrome
+def isPalindromeThree(s): 
+  # Using predefined function to  
+  # reverse to string print(s) 
+  rev = ''.join(reversed(s)) 
+  # Checking if both string are  
+  # equal or not 
+  if (s == rev): 
+    return True
+  return False
+# main function 
+s = "level"
+ans = isPalindromeThree(s) 
+if (ans): 
+  print("Yes") 
+else: 
+  print("No")
+
+print("----------")
