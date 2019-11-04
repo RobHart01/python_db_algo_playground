@@ -32,3 +32,32 @@ d = '{"name":"Robert", "age":22, "city":"Tokyo"}'
 
 e = json.loads(d)
 print(e["city"])
+
+print("----------")
+
+abc = {
+  "name": "Clifford",
+  "age": 19,
+  "city": "Seattle"
+}
+
+xyz = json.dumps(abc)
+
+print(xyz)
+
+print("----------")
+
+x = {
+  "name": "Robert",
+  "age": 22,
+  "married": False,
+  "divorced": False,
+  "children": False,
+  "pets": {"Cat":"Yuni"},
+  "cars": False
+}
+
+print(json.dumps(x))
+
+print("----------")
+
