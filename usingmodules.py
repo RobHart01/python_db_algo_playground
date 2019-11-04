@@ -14,12 +14,21 @@ y = dir(pf)
 print(y)
 
 print("----------")
+
 v = dir(datetime)
 print(v)
+
 print("----------")
+
 c = datetime.datetime.now()
 print(c)
 print(c.year)
 print(c.strftime("%A"))
 print(c.day)
 
+print("----------")
+
+d = '{"name":"Robert", "age":22, "city":"Tokyo"}'
+
+e = json.loads(d)
+print(e["city"])
