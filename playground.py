@@ -248,3 +248,10 @@ print("--------------------")
 
 # 9 Creating Modules
 # Creating new files
+
+# 10 Try Except
+x = 10
+try:
+  print(x)
+except:
+  print("An exception occurred")
