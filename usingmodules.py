@@ -1,6 +1,12 @@
 import modules
-import people
+import people as peep
+import platform as pf
 
 modules.say_hi("Robert")
-z = people.person4["name"]
-a = modules.say_hi(z)
+z = peep.person4["name"]
+modules.say_hi(z)
+
+x = pf.system()
+print(x)
+y = dir(pf)
+print(y)git 

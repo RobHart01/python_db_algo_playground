@@ -121,7 +121,7 @@ print("--------------------")
 
 # 7 Using Objects
 
-class Person:
+""" class Person:
   def __init__(self, name, age):
     self.name = name
     self.age = age
@@ -135,7 +135,7 @@ print(p1.age)
 
 p1.my_function
 
-print("--------------------")
+print("--------------------") """
 
 # Can delete any object using del
 # Example del p1.age
