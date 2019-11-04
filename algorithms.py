@@ -6,6 +6,8 @@ y = x - y
 x = x - y
 print("After Swapping: x =", x, " y =", y)
 
+print("----------")
+
 #2 Check if array/list is palindrome
 # Create a function
 def isPalindrome(arr):
@@ -21,3 +23,23 @@ def isPalindrome(arr):
 testarray = [1,2,3,4,4,3,2,1]
 # Print out array
 print(isPalindrome(testarray))
+
+print("----------")
+
+#2.1 Another way of solving a Palendrome
+# function which return reverse of a string 
+def reverse(s): 
+  return s[::-1] 
+def isPalindromeTwo(s): 
+  # Calling reverse function 
+  rev = reverse(s)   
+  # Checking if both string are equal or not 
+  if (s == rev): 
+    return True
+  return False
+s = "kayak"
+ans = isPalindrome(s) 
+if ans == 1: 
+  print("Yes") 
+else: 
+  print("No")
