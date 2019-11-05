@@ -65,3 +65,13 @@ else:
   print("No")
 
 print("----------")
+
+#2.3 Fourth way of solving Palindrome
+str1 = str(input('Enter any string : '))
+str2 =str1[::-1]
+if (str2==str1):
+  print ('Entered string is Palindrome...: ')
+else:
+  print ('Entered string is not Palindrome...: ')
+
+print("----------")
